@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --white: #ffffff;
+
+   --gray-100: #e1e1e6;
+   --gray-300: #a8a8b3;
+   --gray-700: #323238;
+   --gray-800: #29292e;
+   --gray-850: #1f2729;
+   --gray-900: #121214;
+
+   --teal-300: #4FD1C5;
+   --pink-500: #D53F8C;
+   --cyan-500: #61dafb;
+   --yellow-500: #eba417;
+}
+
+@media (max-width: 1080px) {
+   html {
+      font-size: 93.75%;
+   }
+}
+
+@media (max-width: 720px) {
+   html {
+      font-size: 87.5%;
+   }
+}
+
+body {
+   background: var(--gray-900);
+   color: var(--white);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+   font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+   cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+   margin: 0.5rem 0;
+}
+
+h1 {
+   font-size: 1.5rem;
+   color: var(--pink-500);
+}
+
+h2 {
+   font-size: 1.25rem;
+}
+
+h3 {
+   font-size: 1rem;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.header {
+   padding: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   outline: .1rem solid var(--gray-700)
+}
+
+.header-left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-left h1 {
+   margin-right: 1.5rem;
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+}
+
+nav ul a {
+   margin-right: 1rem;
+   transition: 0.2s;
+   font-weight: bold;
+}
+
+nav ul a:hover {
+   color: var(--pink-500)
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex: 2;
+   gap: 2rem;
+   padding: 2rem;
+}
+
+main .box {
+   width: 200px;
+   height: 200px;
+   outline: 1px solid var(--gray-700);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.2s;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+main .box:hover {
+   background-color: var(--gray-700)
+}
+
+footer {
+   padding: 2rem;
+   outline: 1px solid var(--gray-700);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
